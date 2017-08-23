@@ -2,7 +2,7 @@ const localURL = 'http://localhost:3000/'
 const baseURL = 'https://whispering-coast-43590.herokuapp.com/'
 
 $(document).ready( () => {
-  $.get(localURL + 'authors')
+  $.get(baseURL + 'authors')
   .then ( authors => {
     console.log(authors);
     for (var i = 0; i < authors.length; i++) {
